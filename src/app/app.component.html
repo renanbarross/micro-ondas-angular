@@ -1,0 +1,32 @@
+<div id="principal">
+  <div id="micro-ondas">
+    <div id="painel">
+      <form>
+        <input type="text" [(ngModel)]="nomePrograma" name="nomePrograma" placeholder="Nome do programa">
+        <input type="text" [(ngModel)]="alimento" name="alimento" placeholder="Alimento">
+        <input type="text" [(ngModel)]="caractereAquecimento" name="caractereAquecimento"
+          placeholder="Caractere de aquecimento">
+        <input type="text" [(ngModel)]="instrucoes" name="instrucoes" placeholder="Instruções">
+        <input type="text" [(ngModel)]="tempo" name="tempo" placeholder="Tempo" [readonly]="ePreDefinido">
+        <input type="text" [(ngModel)]="potencia" name="potencia" placeholder="Potência" [readonly]="ePreDefinido">
+
+        <div class="coluna-prog">
+          <button type="button" class="btn-prog" (click)="programarPipoca()">Pipoca</button>
+          <button type="button" class="btn-prog" (click)="programarLeite()">Leite</button>
+          <button type="button" class="btn-prog" (click)="programarCarnesDeBoi()">Carnes de boi</button>
+          <button type="button" class="btn-prog" (click)="programarFrango()">Frango</button>
+          <button type="button" class="btn-prog" (click)="programarFeijao()">Feijão</button>
+        </div>
+
+        <div class="linha-acoes">
+          <button type="button" class="btn-acoes" (click)="pausarOuCancelar()">Pausar | Cancelar</button>
+          <button type="button" class="btn-acoes" (click)="iniciarAquecimento()">Ligar | +30 seg</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="processo">
+      <label>{{ stringInformativa }}</label>
+    </div>
+  </div>
+</div>

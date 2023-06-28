@@ -1,0 +1,76 @@
+#principal {
+  width: 100%;
+  margin: 1.5rem;
+}
+
+#micro-ondas {
+  height: fit-content;
+  width: 40rem;
+  background-color: rgb(129, 129, 129);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#processo {
+  width: 15rem;
+  margin-left: 3rem;
+}
+
+label {
+  color: white;
+}
+
+#painel {
+  width: 25rem;
+}
+
+form>input {
+  height: 2.75rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.btn-prog {
+  height: 2.75rem;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn-acoes {
+  height: 2.75rem;
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.coluna-prog {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.linha-acoes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.3rem;
+}
